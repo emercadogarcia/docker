@@ -1,0 +1,31 @@
+{
+    "name": "Laravel 12 IA-Powered 2026",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspaces",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "onecentlin.laravel-blade",
+                "amiralizadeh9480.laravel-extra-intellisense",
+                "shufo.vscode-blade-formatter",
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-docker",
+                "mtxr.sqltools",
+                "mtxr.sqltools-driver-pg",
+                "mtxr.sqltools-driver-mysql",
+                "google.gemini-vscode",
+                "Alibaba-Cloud.tony",
+                "GitHub.copilot"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+            }
+        }
+    },
+    "remoteUser": "vscode",
+    "postCreateCommand": "composer --version && node -v && gcloud --version && gh --version"
+}
